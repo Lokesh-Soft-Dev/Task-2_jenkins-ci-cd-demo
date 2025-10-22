@@ -1,0 +1,43 @@
+Started by user Admin User
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/jenkins_home/workspace/nodejs-pipeline-demo
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout Code)
+[Pipeline] echo
+✅ Simulated Git checkout
+[Pipeline] echo
+📁 Repository: https://github.com/Lokesh-Soft-Dev/jenkins-ci-cd-demo.git
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build Status)
+[Pipeline] echo
+✅ Build completed successfully
+[Pipeline] echo
+🚀 This demonstrates a working Jenkins pipeline
+[Pipeline] echo
+📝 All stages executed without errors
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deployment Ready)
+[Pipeline] echo
+🎉 Application ready for deployment
+[Pipeline] echo
+🔧 In production, this would deploy to servers
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] echo
+🏁 Jenkins pipeline execution completed
+[Pipeline] echo
+✅ TASK 2 COMPLETED SUCCESSFULLY
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
