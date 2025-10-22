@@ -1,13 +1,23 @@
-# Jenkins CI/CD Pipeline Demo
+# Jenkins CI/CD Pipeline
 
-A simple Node.js application demonstrating Jenkins CI/CD pipeline with Docker.
+This project demonstrates a basic Jenkins CI/CD pipeline for a Node.js application.
 
 ## Pipeline Stages:
-1. **Checkout** - Get code from GitHub
-2. **Build & Test** - Install dependencies and run tests
-3. **Build Docker Image** - Create Docker container
-4. **Deploy** - Run application on port 3002
+1. **Checkout Code** - Downloads code from GitHub
+2. **Build Status** - Simulates build process
 
-## Access Points:
-- **Jenkins:** http://localhost:8080
-- **Application:** http://localhost:3002
+## Jenkins Setup:
+- Jenkins running on: http://localhost:8080
+- Pipeline job: `nodejs-pipeline-demo`
+- Source: GitHub repository
+
+## What I Learned:
+- How to set up Jenkins pipelines
+- Creating Jenkinsfile for CI/CD
+- Configuring Jenkins jobs
+- Basic pipeline stages and structure
+
+## Screenshots:
+- Jenkins dashboard with pipeline
+- Successful build output
+- Pipeline stage execution
