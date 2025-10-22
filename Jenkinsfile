@@ -1,12 +1,8 @@
 pipeline {
     agent any
     
-    tools {
-        nodejs 'nodejs'  // This will be configured in Jenkins later
-    }
-    
     stages {
-        // Stage 1: Checkout code from GitHub
+        // Stage 1: Checkout code
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/Lokesh-Soft-Dev/jenkins-ci-cd-demo.git'
@@ -14,11 +10,14 @@ pipeline {
             }
         }
         
-        // Stage 2: Install dependencies and test
+        // Stage 2: Build and Test using Docker Node container
         stage('Build & Test') {
             steps {
-                sh 'npm install'
-                sh 'npm test'
+                sh '''
+                # Use Docker Node container for npm install and test
+                docker run --rm -v $(pwd):/app -w /app node:18-alpine npm install
+                docker run --rm -v $(pwd):/app -w /app node:18-alpine npm test
+                '''
                 echo '✅ Build and test completed'
             }
         }
